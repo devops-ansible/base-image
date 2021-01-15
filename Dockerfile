@@ -1,5 +1,5 @@
 ARG	IMAGE=ubuntu
-ARG	TAG=18.04
+ARG	TAG=20.04
 FROM $IMAGE:$TAG
 MAINTAINER Felix Kazuya <me@felixkazuya.de>
 MAINTAINER Christian Walonka <cwalonka@it-economics.de>
