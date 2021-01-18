@@ -35,7 +35,9 @@ jobs:
         
       - name: Trigger Build Java-Base
         run: curl --request POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" https://api.github.com/repos/devops-ansible/java-base/dispatches --data '{"event_type":"build_application"}'
-
         
       - name: Trigger Build Docker-LDAP
         run: curl --request POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" https://api.github.com/repos/devops-ansible/docker-ldap/dispatches --data '{"event_type":"build_application"}'
+       
+      - name: Trigger Build worksuite
+        run: curl --request POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" https://api.github.com/repos/devops-ansible/worksuite/dispatches --data '{"event_type":"build_application"}'
