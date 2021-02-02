@@ -38,4 +38,4 @@ echo "it-economics_CA.crt" >> /etc/ca-certificates.conf && update-ca-certificate
 RUN echo "Built at" $(date) > /etc/built_at
 
 #Startconfig
-CMD [ "cat", "/etc/built_at" ]
+CMD ["sleep", "infinity"]
