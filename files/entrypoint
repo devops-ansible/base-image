@@ -3,3 +3,5 @@ cat /etc/built_at
 
 #Running additional startup tasks
 /boot.sh
+
+exec "$@"
