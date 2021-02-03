@@ -5,3 +5,5 @@ if [ $count != 0 ]; then
     chmod a+x ${bootpath}
     for f in ${bootpath}; do source $f; done
 fi
+
+echo "done with startup tasks"
