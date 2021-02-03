@@ -15,6 +15,6 @@ RUN chmod a+x /install.sh && \
     rm -f /install.sh
 
 #Startconfig
-ENTRYPOINT ["/entrypoint"]
+ENTRYPOINT ["entrypoint"]
 CMD ["sleep", "infinity"]
 

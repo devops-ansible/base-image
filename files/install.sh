@@ -26,4 +26,6 @@ locale-gen de_DE
 locale-gen de_DE.UTF-8
 update-locale
 
+mv /entrypoint /usr/local/bin/
+
 echo "Built at" $(date) > /etc/built_at
