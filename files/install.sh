@@ -20,7 +20,7 @@ pip3 install --upgrade pip
 pip install python3-keyczar ln -s /usr/bin/python3 /usr/bin/python
 mkdir /etc/ansible/ 
 echo '[local]\nlocalhost\n' > /etc/ansible/hosts
-
+pip3 install ansible
 
 locale-gen de_DE 
 locale-gen de_DE.UTF-8
